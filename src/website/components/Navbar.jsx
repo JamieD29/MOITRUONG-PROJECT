@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import Logo from "../../assets/img/logo-main.png";
 
 const Navbar = () => {
@@ -34,83 +35,37 @@ const Navbar = () => {
                   >
                     <ul className="navbar-nav m-auto">
                       <li className="nav-item">
-                        <a className="nav-link active" href="#">
-                          Home
+                        <NavLink className="nav-link active" to="/">
+                          Trang chủ
+                        </NavLink>
+                      </li>
+                      <li className="nav-item">
+                        <NavLink className="nav-link" to="/dichvu">
+                          Dịch vụ
                           <span className="sub-nav-toggler"> </span>
-                        </a>
+                        </NavLink>
                         <ul className="sub-menu">
                           <li>
-                            <a href="index.html">Home-1</a>
+                            <NavLink to="/dichvu/chatThai-sinhHoat">Chất thải sinh hoạt</NavLink>
                           </li>
                           <li>
-                            <a href="index-2.html">Home-2</a>
+                            <NavLink to="/dichvu/chatThai-congNghiep">Chất thải công nghiệp</NavLink>
                           </li>
                           <li>
-                            <a href="index-3.html">Home-3</a>
+                            <NavLink to="/dichvu/chatThai-xayDung">Chất thải xây dựng</NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/dichvu/chatThai-taiChe">
+                              Chất thải tái chế
+                            </NavLink>
                           </li>
                         </ul>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Pages
+                        <NavLink className="nav-link" to="/linhvuc">
+                          Lĩnh vực hoạt động
                           <span className="sub-nav-toggler"> </span>
-                        </a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="about.html">About Us</a>
-                          </li>
-                          <li>
-                            <a href="services.html">Service List</a>
-                          </li>
-                          <li>
-                            <a href="team.html">Ecofix Team</a>
-                          </li>
-                          <li>
-                            <a href="faq.html">Helpful FAQ</a>
-                          </li>
-                          <li>
-                            <a href="price.html">Pricing Plans</a>
-                          </li>
-                          <li>
-                            <a href="quotation.html">Get Quotation</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Services
-                          <span className="sub-nav-toggler"> </span>
-                        </a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="paper_recycle.html">Paper Recycling</a>
-                          </li>
-                          <li>
-                            <a href="plastic_recycle.html">Plastic Recycling</a>
-                          </li>
-                          <li>
-                            <a href="glass_recycle.html">Glass Recycling</a>
-                          </li>
-                          <li>
-                            <a href="aluminium_recycle.html">
-                              Aluminium Recycling
-                            </a>
-                          </li>
-                          <li>
-                            <a href="electronics_recycle.html">
-                              Electrical Recycling
-                            </a>
-                          </li>
-                          <li>
-                            <a href="metal_recycle.html">Metal Recycling</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Project
-                          <span className="sub-nav-toggler"> </span>
-                        </a>
+                        </NavLink>
                         <ul className="sub-menu">
                           <li>
                             <a href="project.html">Project</a>
@@ -121,26 +76,16 @@ const Navbar = () => {
                         </ul>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Blog
-                          <span className="sub-nav-toggler"> </span>
-                        </a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="blog-standard.html">Blog-Standard</a>
-                          </li>
-                          <li>
-                            <a href="blog-classic.html">Blog-Classic</a>
-                          </li>
-                          <li>
-                            <a href="blog-details.html">Blog Details</a>
-                          </li>
-                        </ul>
+                        <NavLink className="nav-link" to="">
+                          Tin tức
+                         
+                        </NavLink>
+              
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="contact.html">
+                        <NavLink className="nav-link" to="/lienhe">
                           Contact
-                        </a>
+                        </NavLink>
                       </li>
                     </ul>
                   </div>
