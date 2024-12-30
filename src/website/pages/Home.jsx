@@ -5,6 +5,11 @@ import PaperIcon from "../../assets/img/icon/paper.png";
 import GlassIcon from "../../assets/img/icon/glass.png";
 import ServiceImg from "../../assets/img/service/service_1.jpg";
 import BlogImg from "../../assets/img/blog/3.jpg";
+import AboutImg from "../../assets/img/sgxanh/about/about-800x800.png"
+import ServiceImg1 from "../../assets/img/sgxanh/service/service-1.jpg"
+import ServiceImg2 from "../../assets/img/sgxanh/service/service-2.jpg"
+import ServiceImg3 from "../../assets/img/sgxanh/service/service-3.jpg"
+import ServiceImg4 from "../../assets/img/sgxanh/service/service-4.jpg"
 const Home = () => {
  
   return (
@@ -59,7 +64,7 @@ const Home = () => {
         <div className="single-slide-item">
           <div
             className="image-layer"
-            style={{ backgroundImage: "url(assets/img/slider/slide-1.jpg)" }}
+            style={{ backgroundImage: "url(../../assets/img/sgxanh/slides/thumb_1.jpg)" }}
           >
             <div className="overlay" />
           </div>
@@ -71,19 +76,15 @@ const Home = () => {
               >
                 <div className="hero-area-content">
                   <div className="section-title">
-                    <h6>Welcome to Ecofix</h6>
+                    <h6>Sài Gòn Xanh, xin chào!</h6>
                     <h1>
-                      Thought Solution to <br /> Safe Environment
+                      Thu Gom, <br /> Vận Chuyển và <br /> Xử Lý Chất Thải
                     </h1>
                   </div>
                   <p>
-                    Ecofix is a household name for having been the pioneer of
-                    Recycling and Waste Disposal Services in country from the
-                    corporate clients to the average person.
+                  Chúng tôi cung cấp dịch vụ thu gom và vận chuyển rác chuyên nghiệp, đáp ứng mọi nhu cầu từ hộ gia đình đến doanh nghiệp. Với đội ngũ nhân viên được đào tạo bài bản, hệ thống xe chuyên dụng hiện đại, chúng tôi cam kết mang lại giải pháp xử lý rác thải an toàn, tiện lợi và hiệu quả
                   </p>
-                  <a href="about.html" className="main-btn primary mt-30">
-                    Learn More
-                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -101,11 +102,10 @@ const Home = () => {
               <div className="about-content-wrap">
                 <div className="section-title">
                   <p>
-                    Waste Disposal &amp; Recycling Services in Commercial &amp;
-                    Domestic
+                    GIỚI THIỆU CÔNG TY
                   </p>
                   <h2 className="mt-0">
-                    The Pioneers In The Recycling Service!
+                  Giới thiệu Công Ty TNHH DV Công Ích Sài Gòn Xanh
                   </h2>
                 </div>
                 <div className="about-content">
@@ -113,15 +113,12 @@ const Home = () => {
                     <div className="col-lg-12 col-xl-12">
                       <div className="about-content-left">
                         <p className="highlight">
-                          We are providing the effectively waste disposal &amp;
-                          recycling service with our modern technologies, we
-                          serve commonly, client first priority.
+                        Công Ty TNHH DV Công Ích Sài Gòn Xanh (Sài Gòn Xanh) là một công ty cung cấp dịch vụ toàn diện từ thu gom,
+                         vận chuyển đến xử lý rác thải sinh hoạt, công nghiệp và nguy hại Với cam kết đảm bảo sự hiệu quả và bền vững,
+                          Sài Gòn Xanh đang đóng góp tích cực vào nỗ lực giảm thiểu tác động tiêu cực của rác thải đối với môi trường.
                         </p>
                         <p>
-                          How can better environment for future universe to
-                          recycling waste disposal? We believe the most
-                          effective strategy is to stop waste from entering the
-                          ocean in the first place.
+                         ...
                         </p>
                         <div className="row mt-30">
                           <div className="col-lg-4 col-md-4 col-sm-4 col-4">
@@ -132,8 +129,7 @@ const Home = () => {
                               <div className="featured-content">
                                 <div className="featured-title">
                                   <h5>
-                                    Ontime <br />
-                                    Scheduled
+                                    Lịch trình <br /> đúng giờ
                                   </h5>
                                 </div>
                               </div>
@@ -147,8 +143,8 @@ const Home = () => {
                               <div className="featured-content">
                                 <div className="featured-title">
                                   <h5>
-                                    24/7 <br />
-                                    Services
+                                    Dịch vụ <br />
+                                    24/7
                                   </h5>
                                 </div>
                               </div>
@@ -162,8 +158,8 @@ const Home = () => {
                               <div className="featured-content">
                                 <div className="featured-title">
                                   <h5>
-                                    Affordable <br />
-                                    Cost
+                                    Giá cả <br />
+                                    hợp lý
                                   </h5>
                                 </div>
                               </div>
@@ -181,7 +177,7 @@ const Home = () => {
               data-wow-delay=".4s"
             >
               <div className="about-img">
-                <img src={AboutPng} alt="" />
+                <img src={AboutImg} alt="" />
               </div>
             </div>
           </div>
@@ -191,12 +187,12 @@ const Home = () => {
       <div className="service-area sky-bg section-padding pb-50">
         <div className="container">
           <div className="section-title">
-            <h6>What we’re doing</h6>
-            <h2>Services We Offer</h2>
+            <h6>Dịch Vụ</h6>
+            <h2 className='text-capitalize'>Dịch vụ của chúng tôi</h2>
           </div>
           <div className="row">
             <div
-              className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
+              className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="100ms"
               style={{
                 visibility: "visible",
@@ -208,15 +204,15 @@ const Home = () => {
               <div className="services-two_single">
                 <div className="services-two_img-box">
                   <div className="services-two_img">
-                    <img src={ServiceImg} alt="" />
+                    <img src={ServiceImg1} alt="" />
                   </div>
-                  <div className="services-two_icon">
+                  {/* <div className="services-two_icon">
                     <img src={PaperIcon} alt="" />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="services-two_content">
                   <h3 className="services-two_title">
-                    <a href="paper_recycle.html">Capboard/Paper Recycling</a>
+                    <a href="paper_recycle.html">Chất Thải Công Nghiệp</a>
                   </h3>
                   <p className="services-two_text">
                     Lorem ipsum dolor sit donec amet tristique ante vel sem
@@ -234,7 +230,45 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
+              className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="100ms"
+              style={{
+                visibility: "visible",
+                animationDelay: "100ms",
+                animationName: "fadeInUp",
+              }}
+            >
+              {/*Services Single*/}
+              <div className="services-two_single">
+                <div className="services-two_img-box">
+                  <div className="services-two_img">
+                    <img src={ServiceImg2} alt="" />
+                  </div>
+                  {/* <div className="services-two_icon">
+                    <img src={PaperIcon} alt="" />
+                  </div> */}
+                </div>
+                <div className="services-two_content">
+                  <h3 className="services-two_title">
+                    <a href="paper_recycle.html">Chất Thải Xây Dựng</a>
+                  </h3>
+                  <p className="services-two_text">
+                    Lorem ipsum dolor sit donec amet tristique ante vel sem
+                    dictum is rhoncus elit sed.
+                  </p>
+                  <div className="services-two_bottom">
+                    <a href="paper_recycle.html" className="services-one_btn">
+                      Read More
+                    </a>
+                    <a href="paper_recycle.html" className="services-one_arrow">
+                      <span className="icon-right-arrow" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="200ms"
               style={{
                 visibility: "visible",
@@ -246,15 +280,15 @@ const Home = () => {
               <div className="services-two_single">
                 <div className="services-two_img-box">
                   <div className="services-two_img">
-                    <img src={ServiceImg} alt="" />
+                    <img src={ServiceImg3} alt="" />
                   </div>
-                  <div className="services-two_icon">
+                  {/* <div className="services-two_icon">
                     <img src={PlasticIcon} alt="" />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="services-two_content">
                   <h3 className="services-two_title">
-                    <a href="plastic_recycle.html">Plastic Recycling</a>
+                    <a href="plastic_recycle.html">Chất Thải Sinh Hoạt</a>
                   </h3>
                   <p className="services-two_text">
                     Lorem ipsum dolor sit donec amet tristique ante vel sem
@@ -275,7 +309,7 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
+              className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="300ms"
               style={{
                 visibility: "visible",
@@ -287,15 +321,15 @@ const Home = () => {
               <div className="services-two_single">
                 <div className="services-two_img-box">
                   <div className="services-two_img">
-                    <img src={ServiceImg} alt="" />
+                    <img src={ServiceImg4} alt="" />
                   </div>
-                  <div className="services-two_icon">
+                  {/* <div className="services-two_icon">
                     <img src={GlassIcon} alt="" />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="services-two_content">
                   <h3 className="services-two_title">
-                    <a href="glass_recycle.html">Glass Recycling</a>
+                    <a href="glass_recycle.html">Chất Thải Tái Chế</a>
                   </h3>
                   <p className="services-two_text">
                     Lorem ipsum dolor sit donec amet tristique ante vel sem
@@ -312,6 +346,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+           
           </div>
           <div className="row justify-content-center">
             <div className="col-xl-7 text-center">
@@ -325,30 +360,27 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* Field of operation */}
+      
+      {/* Collection process */}
       <div className="process-area dark-bg section-padding">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-6 col-lg-6">
               <div className="section-title">
-                <h6>Recycling Wastage Save Environment!</h6>
+                <h6>Quy Trình</h6>
                 <h2 className="text-white">
-                  Simple Steps Wastage <br /> to Recycling Item Processing
+                  Mô Tả Quy Trình Thu Gom
                 </h2>
               </div>
             </div>
             <div className="col-xl-6 col-lg-6">
               <div className="process-right-content">
                 <p className="text-white">
-                  Recycling is the process of converting waste materials into
-                  new materials and objects. To do this, recycling often
-                  requires both machinery and employees to correctly sort
-                  recyclable items based on the material they’re made of.{" "}
+                "Dịch vụ thu gom rác của chúng tôi bắt đầu từ lúc 4:00 sáng và hoàn thành trước 10:00 sáng, 
+                đảm bảo môi trường sống sạch sẽ ngay từ đầu ngày. Với đội xe hiện đại và lộ trình được sắp xếp thông minh, 
+                chúng tôi cam kết không làm gián đoạn sinh hoạt của khách hàng."
                 </p>
-                <p className="text-white">
-                  This Waste Management video shows the step-by-step process of
-                  how materials are processed once they reach a facility.
-                </p>
+                
                 <div className="process-btn">
                   <a href="contact.html" className="main-btn">
                     Get Started
@@ -363,7 +395,7 @@ const Home = () => {
           <div className="process-item-wrap">
             <div className="row">
               <div
-                className="col-xl-3 col-lg-3 col-md-6 wow fadeInLeft"
+                className="col-xl-4 col-lg-3 col-md-6 wow fadeInLeft"
                 data-wow-delay=".2s"
               >
                 <div className="process-single">
@@ -371,18 +403,17 @@ const Home = () => {
                     <img src="assets/img/process/1.png" alt="" />
                   </div>
                   <div className="process-title">
-                    <h5>Collection Wastage</h5>
+                    <h5>Đặt Lịch</h5>
                   </div>
                   <div className="process-desc">
                     <p>
-                      Recycling is the process of making used or unwanted
-                      products into new.
+                    Đặt lịch thu gom dễ dàng qua điện thoại hoặc website.
                     </p>
                   </div>
                 </div>
               </div>
               <div
-                className="col-xl-3 col-lg-3 col-md-6 wow fadeInLeft"
+                className="col-xl-4 col-lg-3 col-md-6 wow fadeInLeft"
                 data-wow-delay=".4s"
               >
                 <div className="process-single two">
@@ -390,18 +421,17 @@ const Home = () => {
                     <img src="assets/img/process/2.png" alt="" />
                   </div>
                   <div className="process-title">
-                    <h5>Pickup Wastage</h5>
+                    <h5>Thu Gom</h5>
                   </div>
                   <div className="process-desc">
                     <p>
-                      Recycling is the process of making used or unwanted
-                      products into new.
+                    Xe thu gom đến đúng thời gian hẹn và tiến hành thu gom rác một cách nhanh chóng.
                     </p>
                   </div>
                 </div>
               </div>
               <div
-                className="col-xl-3 col-lg-3 col-md-6 wow fadeInLeft"
+                className="col-xl-4 col-lg-3 col-md-6 wow fadeInLeft"
                 data-wow-delay=".6s"
               >
                 <div className="process-single three">
@@ -409,37 +439,186 @@ const Home = () => {
                     <img src="assets/img/process/3.png" alt="" />
                   </div>
                   <div className="process-title">
-                    <h5>Reduce Garbage</h5>
+                    <h5>Vận Chuyển</h5>
                   </div>
                   <div className="process-desc">
                     <p>
-                      Recycling is the process of making used or unwanted
-                      products into new.
+                    Vận chuyển rác đến các điểm xử lý được cấp phép, đảm bảo xử lý rác theo đúng tiêu chuẩn môi trường.
                     </p>
                   </div>
                 </div>
               </div>
-              <div
-                className="col-xl-3 col-lg-3 col-md-6 wow fadeInLeft"
-                data-wow-delay=".8s"
-              >
-                <div className="process-single four">
-                  <div className="process-icon">
-                    <img src="assets/img/process/4.png" alt="" />
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Field */}
+      <div className="service-area sky-bg section-padding pb-50">
+        <div className="container">
+          <div className="section-title">
+            <h6>Lĩnh Vực</h6>
+            <h2 className='text-capitalize'>Lĩnh vực hoạt động của chúng tôi</h2>
+          </div>
+          <div className="row">
+            <div
+              className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="100ms"
+              style={{
+                visibility: "visible",
+                animationDelay: "100ms",
+                animationName: "fadeInUp",
+              }}
+            >
+              {/*Services Single*/}
+              <div className="services-two_single">
+                <div className="services-two_img-box">
+                  <div className="services-two_img">
+                    <img src={ServiceImg1} alt="" />
                   </div>
-                  <div className="process-title">
-                    <h5>Recycling Process</h5>
-                  </div>
-                  <div className="process-desc">
-                    <p>
-                      Recycling is the process of making used or unwanted
-                      products into new.
-                    </p>
+                  {/* <div className="services-two_icon">
+                    <img src={PaperIcon} alt="" />
+                  </div> */}
+                </div>
+                <div className="services-two_content">
+                  <h3 className="services-two_title">
+                    <a href="paper_recycle.html">Thu Gom, Vận Chuyển và Xử Lý Chất Thải Sinh Hoạt</a>
+                  </h3>
+                  <p className="services-two_text">
+                    Lorem ipsum dolor sit donec amet tristique ante vel sem
+                    dictum is rhoncus elit sed.
+                  </p>
+                  <div className="services-two_bottom">
+                    <a href="paper_recycle.html" className="services-one_btn">
+                      Read More
+                    </a>
+                    <a href="paper_recycle.html" className="services-one_arrow">
+                      <span className="icon-right-arrow" />
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+            <div
+              className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="100ms"
+              style={{
+                visibility: "visible",
+                animationDelay: "100ms",
+                animationName: "fadeInUp",
+              }}
+            >
+              {/*Services Single*/}
+              <div className="services-two_single">
+                <div className="services-two_img-box">
+                  <div className="services-two_img">
+                    <img src={ServiceImg2} alt="" />
+                  </div>
+                  {/* <div className="services-two_icon">
+                    <img src={PaperIcon} alt="" />
+                  </div> */}
+                </div>
+                <div className="services-two_content">
+                  <h3 className="services-two_title">
+                    <a href="paper_recycle.html">Thu Gom, Vận Chuyển và Xử Lý Chất Thải Sinh Hoạt</a>
+                  </h3>
+                  <p className="services-two_text">
+                    Lorem ipsum dolor sit donec amet tristique ante vel sem
+                    dictum is rhoncus elit sed.
+                  </p>
+                  <div className="services-two_bottom">
+                    <a href="paper_recycle.html" className="services-one_btn">
+                      Read More
+                    </a>
+                    <a href="paper_recycle.html" className="services-one_arrow">
+                      <span className="icon-right-arrow" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="200ms"
+              style={{
+                visibility: "visible",
+                animationDelay: "200ms",
+                animationName: "fadeInUp",
+              }}
+            >
+              {/*Services Two Single*/}
+              <div className="services-two_single">
+                <div className="services-two_img-box">
+                  <div className="services-two_img">
+                    <img src={ServiceImg3} alt="" />
+                  </div>
+                  {/* <div className="services-two_icon">
+                    <img src={PlasticIcon} alt="" />
+                  </div> */}
+                </div>
+                <div className="services-two_content">
+                  <h3 className="services-two_title">
+                    <a href="plastic_recycle.html">Thu Gom, Vận Chuyển và Xử Lý Chất Thải Nguy Hại</a>
+                  </h3>
+                  <p className="services-two_text">
+                    Lorem ipsum dolor sit donec amet tristique ante vel sem
+                    dictum is rhoncus elit sed.
+                  </p>
+                  <div className="services-two_bottom">
+                    <a href="plastic_recycle.html" className="services-one_btn">
+                      Read More
+                    </a>
+                    <a
+                      href="plastic_recycle.html"
+                      className="services-one_arrow"
+                    >
+                      <span className="icon-right-arrow" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="300ms"
+              style={{
+                visibility: "visible",
+                animationDelay: "300ms",
+                animationName: "fadeInUp",
+              }}
+            >
+              {/*Services Two Single*/}
+              <div className="services-two_single">
+                <div className="services-two_img-box">
+                  <div className="services-two_img">
+                    <img src={ServiceImg4} alt="" />
+                  </div>
+                  {/* <div className="services-two_icon">
+                    <img src={GlassIcon} alt="" />
+                  </div> */}
+                </div>
+                <div className="services-two_content">
+                  <h3 className="services-two_title">
+                    <a href="glass_recycle.html">Tư Vấn Môi Trường</a>
+                  </h3>
+                  <p className="services-two_text">
+                    Lorem ipsum dolor sit donec amet tristique ante vel sem
+                    dictum is rhoncus elit sed.
+                  </p>
+                  <div className="services-two_bottom">
+                    <a href="glass_recycle.html" className="services-one_btn">
+                      Read More
+                    </a>
+                    <a href="glass_recycle.html" className="services-one_arrow">
+                      <span className="icon-right-arrow" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
           </div>
+          
         </div>
       </div>
       {/* Why you should choose me */}
@@ -452,50 +631,30 @@ const Home = () => {
             >
               <div className="contact-wrap">
                 <div className="section-title">
-                  <h6>Ecology Survive With Sustainable service!</h6>
+                  <h6>Liên Hệ</h6>
                   <h2 className="text-white">
-                    Time Is The Best Way To Think About Recycling
+                    Lý Do Chọn Chúng Tôi
                   </h2>
                 </div>
-                <div className="contact-desc">
-                  <p className="text-white">
-                    Recycling is not just learning which bin to throw an item
-                    into. It’s about appreciating the resources that went into
-                    making the item and understanding the value of these
-                    materials. You will truly understand recycling if you change
-                    your mindset.
-                  </p>
-                </div>
+                
                 <div className="contact-list-wrap">
                   <div className="row">
                     <div className="col-12 col-md-4 col-sm-6 col-lg-6">
                       <ul className="list-unstyled contact-list">
                         <li>
-                          <i className="las la-check" /> Reduce Greenhouse
-                          Effect
+                          <i className="las la-check" /> Thu Gom Rác Thải
                         </li>
                         <li>
                           <i className="las la-check" />
-                          Conserv Natural Resources
+                          Đo Kiểm Môi Trường
                         </li>
                         <li>
                           <i className="las la-check" />
-                          Reduces Carbon Emissions
+                          Tư Vấn Môi Trường
                         </li>
                       </ul>
                     </div>
-                    <div className="col-12 col-md-4 col-sm-6 col-lg-6">
-                      <ul className="list-unstyled contact-list">
-                        <li>
-                          <i className="las la-check" />
-                          Protects Ecosystems{" "}
-                        </li>
-                        <li>
-                          <i className="las la-check" />
-                          Economic Benefits.
-                        </li>
-                      </ul>
-                    </div>
+                   
                   </div>
                 </div>
                 <div className="contact-btn">
@@ -511,50 +670,49 @@ const Home = () => {
             >
               <div className="quotation-wrap">
                 <div className="quotation-inner">
-                  <h5 className="quotation-heading">Request A Quote</h5>
-                  <p className="quotation-desc">
+                  <h5 className="quotation-heading">Để lại thông tin liên hệ cho chúng tôi</h5>
+                  {/* <p className="quotation-desc">
                     There are various ways to reduce waste so you can have the
                     peace of mind that you’re making a positive impact.
-                  </p>
+                  </p> */}
                   <form action="index.html">
                     <div className="row">
-                      <div className="col-12 col-md-6">
-                        <label>Name</label>
+                      <div className="col-12">
+                        <label>Họ Tên</label>
                         <input
                           className="form-control"
                           type="text"
-                          placeholder="Name"
+                          placeholder="Họ Tên"
                           required=""
                         />
                       </div>
-                      <div className="col-12 col-md-6">
-                        <label>Company Name</label>
+                      <div className="col-12">
+                        <label>Số Điện Thoại</label>
                         <input
                           className="form-control"
                           type="text"
-                          placeholder="Compnay Name"
+                          placeholder="Số điện thoại"
                           required=""
                         />
                       </div>
-                      <div className="col-12 col-md-6">
-                        <label>Contact Number</label>
-                        <input
-                          className="form-control"
-                          type="number"
-                          placeholder="Contact Number"
-                          required=""
-                        />
-                      </div>
-                      <div className="col-12 col-md-6">
-                        <label>E-mail</label>
+                      <div className="col-12">
+                        <label>Email</label>
                         <input
                           className="form-control"
                           type="email"
-                          placeholder="E-mail"
+                          placeholder="Email"
                           required=""
                         />
                       </div>
-                      <div className="col-lg-6 col-md-12 mb-20">
+                      <div className="col-12">
+                        <label>Nội dung</label>
+                        <textarea
+                          className="form-control"
+                          placeholder="Nội dung cần tư vấn"
+                        
+                        />
+                      </div>
+                      {/* <div className="col-lg-6 col-md-12 mb-20">
                         <label>Service Type</label>
                         <div className="quotation-item">
                           <select
@@ -602,7 +760,7 @@ const Home = () => {
                           type="time"
                           required=""
                         />
-                      </div>
+                      </div> */}
                       <div className="col-12">
                         <button className="main-btn primary">
                           submit request
@@ -623,8 +781,8 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-6 col-md-12 col-12">
               <div className="section-title">
-                <h6>Read Blog About Recycling</h6>
-                <h2>Our Latest News &amp; Articles</h2>
+                <h6>Tin Tức</h6>
+                <h2>Thông Tin Mới Nhất</h2>
               </div>
             </div>
             <div className="col-lg-6 text-end" />
@@ -648,8 +806,7 @@ const Home = () => {
                   </p>
                   <h5>
                     <a href="blog-details.html">
-                      Sainsbury’s Announces New In-Store Wastage Recycling
-                      Scheme
+                    TP. Hồ Chí Minh: Rác thải y tế đã tăng bình quân 69 tấn/ngày
                     </a>
                   </h5>
                   <p>
@@ -681,7 +838,7 @@ const Home = () => {
                   </p>
                   <h5>
                     <a href="blog-details.html">
-                      Plastic Free July: Who produces the most plastic waste?
+                    TP. Hồ Chí Minh: Chung tay ngăn chặn nạn xả rác
                     </a>
                   </h5>
                   <p>
@@ -713,8 +870,7 @@ const Home = () => {
                   </p>
                   <h5>
                     <a href="blog-details.html">
-                      Government figures show declining recycling rates in the
-                      UK
+                    TP. Hồ Chí Minh: Rác thải y tế đã tăng bình quân 69 tấn/ngày
                     </a>
                   </h5>
                   <p>
